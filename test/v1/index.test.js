@@ -1,9 +1,7 @@
 const request = require("supertest");
 
-test("GET /api/v1", (done) => {
-  request("http://localhost:8080")
-    .get("/")
-    //    .set('Accept', 'application/json')
-    //    .expect('Content-Type', /json/)
-    .expect(200, done);
+test("GET /api/v1", async () => {
+  // can add headers and body
+  const { status } = await request("http://localhost:8080").get("/");
+  expect(status).toBe(200);
 });
