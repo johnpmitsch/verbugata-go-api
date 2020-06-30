@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npx now dev",
-    "test": "npx jest test"
+    "test": "npx jest test",
+    "lint": "npx eslint test",
+    "format": "npx prettier --write test/"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,19 @@
   },
   "homepage": "https://github.com/johnpmitsch/verbugata-go-api#readme",
   "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.17.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.1.0",
+    "prettier": "^2.0.5",
     "supertest": "^4.0.2"
   },
   "jest": {
-    "testPathIgnorePatterns": [ "node_modules" ]
+    "testPathIgnorePatterns": [
+      "node_modules"
+    ]
   }
 }
