@@ -20,10 +20,9 @@
   "homepage": "https://github.com/johnpmitsch/verbugata-go-api#readme",
   "devDependencies": {
     "jest": "^26.1.0",
-    "now": "^19.1.1",
     "supertest": "^4.0.2"
   },
   "jest": {
-    "testPathIgnorePatterns": [ "node_modules", ".vercel" ]
+    "testPathIgnorePatterns": [ "node_modules" ]
   }
 }
