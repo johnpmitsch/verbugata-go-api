@@ -1,0 +1,29 @@
+{
+  "name": "verbugata-go-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx now dev",
+    "test": "npx jest test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnpmitsch/verbugata-go-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnpmitsch/verbugata-go-api/issues"
+  },
+  "homepage": "https://github.com/johnpmitsch/verbugata-go-api#readme",
+  "devDependencies": {
+    "jest": "^26.1.0",
+    "now": "^19.1.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [ "node_modules", ".vercel" ]
+  }
+}
