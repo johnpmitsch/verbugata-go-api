@@ -1,3 +1,3 @@
 module github.com/johnpmitsch/verbugata-go-api
 
-go 1.14
+go 1.13
