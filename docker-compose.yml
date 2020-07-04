@@ -1,10 +1,20 @@
 version: "3"
 services:
-  app:
+  api:
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./docker/api/Dockerfile
     env_file:
-      - ./.env
+      - ./docker/api/.env
     ports:
       - "8080:8080"
+
+  db:
+    build: ./docker/db/
+    environment:
+      POSTGRES_USER: verbugata_user
+      POSTGRES_PASSWORD: verbugata_pass
+      POSTGRES_DB: verbugata
+    ports:
+      - 5431:5431
+    restart: always
